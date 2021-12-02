@@ -1,4 +1,4 @@
-function sumOfAllFears(...numbers) {
+const sumOfAllFears = (...numbers) => {
     if (!numbers.every((a) => Number.isNumber(a)))
       throw "All arguments must be numbers.";
     return numbers.reduce((a, b) => a + b);
